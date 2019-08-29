@@ -1,8 +1,8 @@
-class CreateCompaigns < ActiveRecord::Migration[5.0]
+class CreateCampaigns < ActiveRecord::Migration[5.0]
   def change
-    create_table :compaigns do |t|
+    create_table :campaigns do |t|
       t.string :title
-      t.rext :description
+      t.text :description
       t.references :user, foreign_key: true
       t.integer :status
 
